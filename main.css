@@ -1,0 +1,205 @@
+/** Docracy - Home Page - Stylesheet **/
+/* author: Alvaro Casanova (yeahstyle@gmail.com) */ 
+/* date: 11/28/11 */ 
+
+@import url("/public/stylesheets/faq.css");
+
+
+/*************************** HOME PAGE **************************************/
+
+/** main layout **/
+
+div#homepage-content.container {width: 788px; padding-top: 15px;}
+#homepage-content .span-one-third {width: 248px; margin-right: 22px; margin-left: 0;}
+#homepage-content .span-one-fourth {width: 186px;  margin: 0;  margin-right: 10px;}
+#homepage-content .span-one-fifth {width: 149px;  margin: 0;  margin-right: 10px;}
+
+/** intro **/
+#docracy-intro {background: transparent url(https://www.docracy.com/public/images/docracy_logo.png) no-repeat 20px center; padding-left: 127px; margin-top: 0px; margin-left: 40px; margin-bottom: 40px; width: 680px; }
+#docracy-intro h1 {font-size: 49px; position: relative; top: 17px; margin-bottom: 25px;}
+#docracy-intro h2 {font-weight: normal; color: #858585; font-size: 20px;}
+
+/** steps **/
+ul#steps {margin: 0; padding: 0; padding-bottom: 30px; margin-bottom: 30px; list-style: none;}
+ul#steps li {font-weight: bold;}
+ul#steps li span.tagline {font-weight: normal; display: block; color: #848484;}
+ul#steps .span-one-third.last {margin-right: 0; text-align: center;}
+ul#steps .span-one-third.last img { padding: 0; }
+div.desc {width: 210px; margin: 0 auto; text-align: left}
+div.item-number {font-size: 60px; float: left;  width: 56px; position: relative; top: 8px;}
+div.step-description {float: left; width: 180px; font-size: 15px; margin-bottom: 30px;  width: 150px;}
+
+ul#steps li img {display: block; clear: both; margin: 0 auto; text-align: center;}
+
+/** categories **/
+#doc-categories.row {margin-left: 0; margin-bottom: 30px;}
+#doc-categories.row.logged-in {border-bottom: 1px solid #e8e8e8;}
+#doc-categories .span-one-fifth.last {margin-right: 0;}
+#doc-categories h4 {margin-bottom: 15px}
+#doc-categories ul {padding: 0; margin: 0; list-style-type: none;}
+#doc-categories li {margin-bottom: 10px;}
+
+
+/** search input **/ 
+form#search-d {margin-bottom: 20px; position: relative;}
+form#search-d fieldset {padding: 0; margin: 0;}
+form#search-d input {padding: 20px;}
+form#search-d  input#search-q {width: 584px; margin-right: 6px; font-size: 18px; padding-left: 20px; padding: 20px 20px}
+
+/** submit button **/
+#submit-search {
+  height: 60px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  width: 152px;
+  display: inline-block;
+  line-height: normal;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  background: #91ddfd url(https://www.docracy.com/public/images/mag.png) no-repeat center center;  border: 1px solid #68c3e8;
+
+   /** css transition **/ 
+  -webkit-transition: 0.1s linear all;
+  -moz-transition: 0.1s linear all;
+  -ms-transition: 0.1s linear all;
+  -o-transition: 0.1s linear all;
+  transition: 0.1s linear all;
+
+}
+
+#submit-search:hover {background-color: #86ccea; border: 1px solid #659bb1}
+#submit-search:focus {-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+ -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);
+ box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 0 8px rgba(82, 168, 236, 0.6);}
+
+
+/** signup notice **/
+#signup-notice.span-one-fifth {background: transparent url(https://www.docracy.com/public/images/add_doc.png) no-repeat center 10px; border: 1px solid #e8e8e8; height: 100px; padding: 10px; width: 130px; position: relative; left: 9px; text-align: center; padding-top: 106px; padding-bottom: 0;}
+#signup-notice p {margin-bottom: 10px; color: #848484; font-size: 13px;}
+
+/** logged in users **/
+#notloggeduser-home { margin-left: 0; padding-top: 20px; margin-bottom: 16px;}
+nav.document-lists {width: 375px; float: left; margin-right: 28px; position: relative;}
+nav.document-lists h3 {margin-bottom: 10px; border-bottom: 1px solid #e8e8e8; padding-bottom: 8px;}
+#recently-changed-docs {margin-right: 0;}
+nav.document-lists ul {margin: 0; padding: 0; list-style-type: none;}
+nav.document-lists footer {margin: 0; padding: 0; border: none; font-size: 11px; color: #858585; position: relative; top: 5px;} 
+nav.document-lists li {margin-bottom: 15px; padding-top: 10px;}
+nav.document-lists li:first-child {border-top: none;}
+nav.document-lists li.last {margin-bottom: 0;}
+
+/** toolbar **/
+.docs-toolbar {text-align: right; position: absolute; top: 0px; right: 0; width: 300px;}
+/**.docs-toolbar .showall {margin-left: 10px;}**/
+
+
+/*********** PARTNERS & PRESS / added April 12, 2012 ***********/
+section.homepage-section {border-top: 1px solid #e8e8e8; padding: 30px 0; }
+section#partners, section#press {margin-left: 0;}
+section#press blockquote footer {position: absolute; bottom: 0;}
+section#partners ul, section#press ul {list-style-type: none; margin: 0; padding: 0;}
+section#press ul li.span-one-fifth, section#partners ul li.span-one-fifth  { width: 140px; margin-right: 19px; } 
+section#press ul li.last, section#partners ul li.last {margin-right: 0;}
+section#press blockquote { border: none; position: relative; height: 180px; padding-left: 0; background: url(https://www.docracy.com/public/images/quote.png) no-repeat 0 0; padding-top: 37px;}
+section#press p {line-height: 1.921; margin-bottom: 22px; color: #858585; font-size: 12px; font-weight: normal;}
+section#press blockquote footer a:link, section#press blockquote footer a:visited { display: block; overflow: hidden; text-indent: -9999px;}
+
+/** press logos **/
+a#techcrunch:link, a#techcrunch:visited {width: 36px; height: 18px; background: url(https://www.docracy.com/public/images/logos/tc.png) no-repeat 0 0;}
+a#techcrunch:hover {background-position: 0 -18px;}
+
+a#lifehacker:link, a#lifehacker:visited {width: 81px; height: 23px; background: url(https://www.docracy.com/public/images/logos/lifehacker.png) no-repeat 0 0; position: relative; top: 2px;}
+a#lifehacker:hover {background-position: 0 -23px;}
+
+a#cbs:link, a#cbs:visited {width: 100px; height: 17px; background: url(https://www.docracy.com/public/images/logos/cbs.png) no-repeat 0 0; position: relative; top: 1px;}
+a#cbs:hover {background-position: 0 -17px;}
+
+a#wired:link, a#wired:visited {width: 77px; height: 17px; background: url(https://www.docracy.com/public/images/logos/wired.png) no-repeat 0 0; position: relative; }
+a#wired:hover {background-position: 0 -17px;}
+
+a#business-insider:link, a#business-insider:visited {width: 80px; height: 34px; background: url(https://www.docracy.com/public/images/logos/business_insider.png) no-repeat 0 0; position: relative; top:7px;}
+a#business-insider:hover {background-position: 0 -34px;}
+
+
+/** partners **/
+section#partners {padding-bottom: 0;}
+section#partners h3 {margin-bottom: 30px; }
+section#partners ul a {display: block; overflow: hidden; text-indent: -9999px; margin: 0 auto;}
+
+a#aiga:link, a#aiga:visited {width: 92px; height: 92px; background: url(https://www.docracy.com/public/images/logos/aiga.png) no-repeat 0 0; margin: 0;}
+a#aiga:hover {background-position: 0 -92px;}
+
+a#techstars:link, a#techstars:visited {width: 110px; height: 79px; background: url(https://www.docracy.com/public/images/logos/techstars.png) no-repeat 0 0; position: relative; top: 6px;}
+a#techstars:hover {background-position: 0 -79px;}
+
+a#gd:link, a#gd:visited {width: 72px; height: 42px; background: url(https://www.docracy.com/public/images/logos/gd.png) no-repeat 0 0; position: relative; top: 25px;}
+a#gd:hover {background-position: 0 -42px;}
+
+a#founder:link, a#founder:visited {width: 50px; height: 80px; background: url(https://www.docracy.com/public/images/logos/founder.png) no-repeat 0 0; position: relative; top: 3px;}
+a#founder:hover {background-position: 0 -80px;}
+
+a#foundry:link, a#foundry:visited {width: 135px; height: 46px; background: url(https://www.docracy.com/public/images/logos/foundry.png) no-repeat 0 0; position: relative; top: 23px;}
+a#foundry:hover {background-position: 0 -46px;}
+
+
+/*********** STARTER KITS  / added April 23, 2012 ***********/
+#kits-nav { border-top: none; padding: 30px 0px 30px 0px; }
+#kits-nav.row { margin-left: 0; }
+#kits-nav ul { margin-bottom: 0;} 
+#kits-nav li { width: 237px; margin-left: 10px; }
+#kits-nav.row a:link, #kits-nav.row a:visited {display: block; height: 100%; width: 100%; padding: 60px 0 20px 0; color: #333; font-weight: bold; font-size: 17px;}
+#kits-nav.row a:hover { text-decoration: none; }
+
+a#freelancer_kit:link, a#freelancer_kit:visited { background: url(https://www.docracy.com/public/images/starter_kits/freelancer_icon.png) no-repeat 0 15px; }
+a#startup_kit:link, a#startup_kit:visited { background: url(https://www.docracy.com/public/images/starter_kits/startup_icon.png) no-repeat 0 15px; }
+a#personal_kit:link, a#personal_kit:visited { background: url(https://www.docracy.com/public/images/starter_kits/personal_docs_icon.png) no-repeat 0 15px; }
+
+#kits-nav a:hover, #kits-nav.row a:focus { background-position: -227px 15px; }
+#kits-nav a:active { background-position: -454px 15px;} 
+
+
+/*********** ABOUT PAGE ***********/
+div#the-team h3, div#about-docracy h3 {color: #565656}
+div#the-team h3 {padding: 0 10px; border-top: 1px solid #e8e8e8; border-bottom: 1px solid #e8e8e8; font-size: 20px; margin-bottom: 24px; padding-left: 0;	}
+
+div#the-team ul {padding: 0; margin: 0; list-style-type: none; }
+div#the-team ul li figure{width: 150px; text-align: center; padding:0; margin: 0; margin-bottom: 20px;}
+div#the-team ul li figure figcaption {margin-top: -2px;}
+div#the-team ul li figure figcaption b {display: block; width: 150px; height: 48px;}
+
+/** john **/
+div#the-team ul li figure#john figcaption b {background: transparent url(https://www.docracy.com/public/images/team/john_name.png) no-repeat top center;}
+/** matt **/
+div#the-team ul li figure#matt figcaption b {background: transparent url(https://www.docracy.com/public/images/team/matt_name.png) no-repeat top center;}
+/** veronica **/
+div#the-team ul li figure#veronica figcaption b {background: transparent url(https://www.docracy.com/public/images/team/veronica_name.png) no-repeat top center;}
+/** alvaro **/
+div#the-team ul li figure#alvaro figcaption b {background: transparent url(https://www.docracy.com/public/images/team/alvaro_name.png) no-repeat top center;}
+
+
+
+
+/** Added July 31, 2012 **/
+#doc-categories.row { /* margin-bottom: 30px; padding-bottom: 30px;*/  }
+#doc-categories.row.logged-in { border-bottom: 0; }
+.doc-dashboard-column:first-child { margin-right: 4%; }
+.doc-dashboard-column { float: left; width: 48%; }
+#your-docs-home .doc-info { padding-left: 5px; }
+
+#homepage-content .doc-list li { }
+#homepage-content .users-list li { }
+#homepage-content .doc-info h3 { font-size: 13px; font-weight: 500; }
+#homepage-content .doc-info  { font-size: 11px; color: #858585;}
+
+
+
+
+/*********** DOCRACY VIDEO / added July 24, 2012 ***********/
+#introVideo { border: 1px solid #cccccc; padding: 10px; height: 431px; margin-bottom: 30px; border-radius: 3px; }
+#introVideo iframe { border: 1px solid #b4b4b4; }
